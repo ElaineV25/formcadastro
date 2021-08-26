@@ -1,0 +1,126 @@
+<script type='text/javascript' src='trat_cep.js'></script>
+
+
+<form action="/add-candidados" method="POST">
+    <h3 id="titulo">DADOS PESSOAIS</h3>
+    <br>
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" required><br>
+        </div>
+        <div class="campo">
+            <label for="cargo">Cargo Pretendido</label>
+            <input type="text" id="cargo"><br>
+        </div>
+        </div>
+        <br>
+
+        <div class="campo">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" id="data" required><br>
+        </div>
+        <div class="campo">
+            <label for="estadocivil'">Estado Civil</label>
+            <select id="estadocivil">
+                <option selected disabled value="">Selecione</option>
+                <option>Solteiro(a)</option>
+                <option>Casado(a)</option>
+                <option>Divorciado(a)</option>
+                <option>Viúvo(a)</option>
+            </select>
+            <div class="campo">
+                <label for="sexo">Sexo</label>
+                <select id="sexo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Prefiro não responder</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="campo">
+            <label for="logradouro">Endereço</label><br>
+            <input type="text" name="logradouro" id="logradouro" required><br>
+        </div>
+        </div>
+        <div class="campo">
+            <label for="bairro">Bairro</label><br>
+            <input type="text" name="bairro" id="bairro" required>
+        </div>
+        <div class="campo">
+            <label for="cep">Cep</label>
+            <input type='text' id='cep' name='cep' size='15' maxlength='8' autocomplete="on">
+            <button type='button' onclick='consultaCep()'> Consultar </button>
+        </div>
+        <br>
+
+        <div class="campo">
+            <label for="localidade">Cidade</label><br>
+            <input type="text" name="localidade" id="localidade" required><br>
+        </div>
+        </div>
+
+        <div class="campo">
+            <label for="tel">Telefone Fixo </label><br>
+            <input type="text" id="tel"><br>
+        </div>
+        <div class="campo">
+            <label for="cel">Celular</label>
+            <input type="text" id="cel"><br>
+        </div>
+        </div>
+
+        <div class="campo">
+            <label for="contato">Contato</label>
+            <input type="text" id="contato"><br>
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email"><br>
+        </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="grupo">
+        <br>
+        <br>
+
+        <h4>DOCUMENTOS</h4>
+
+        <div class="campo">
+            <label for="identidade">Identidade</label>
+            <input type="text" id="identidade">
+        </div>
+
+        <div class="campo">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf">
+
+        </div>
+
+        <div class="campo">
+            <label for="possuiveiculo">Possui Veículo</label>
+            <select id="possuiveiculo">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+        <div class="campo">
+
+            <label for="habilitacao">Habilitação</label>
+            <select id="habilitacao">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+
+        </div>
+    </fieldset>
+    </div>
+
+    <button class="botao" type="submit">Enviar</button>
+</form>
