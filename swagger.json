@@ -1,0 +1,84 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API Candidatos",
+    "title": "Swagger API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "sumary": "Cadastro de candidato",
+        "description": "Cadastro de candidatos a emprego",
+        "tags": [
+          "candidato"
+        ],
+        "requestBody": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "cargo": {
+                  "type": "string"
+                },
+                "data_nasc": {
+                  "type": "date"
+                },
+                "estadocivil": {
+                  "type": "string"
+                },
+                "sexo": {
+                  "type": "string"
+                },
+                "logradouro": {
+                  "type": "string"
+                },
+                "bairro": {
+                  "type": "string"
+                },
+                "cep": {
+                  "type": "integer"
+                },
+                "localidade": {
+                  "type": "string"
+                },
+                "tel": {
+                  "type": "integer"
+                },
+                "cel": {
+                  "type": "integer"
+                },
+                "contato": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "identidade": {
+                  "type": "integer"
+                },
+                "cpf": {
+                  "type": "integer"
+                },
+                "possuiveic": {
+                  "type": "string"
+                },
+                "habilitacao": {
+                  "type": "string"
+                }
+              }
+            } 
+          }
+        } 
+      } 
+    }
+  }
+}
