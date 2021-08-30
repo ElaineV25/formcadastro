@@ -1,4 +1,4 @@
-
+const app = require('express')
 
 const limparFormulario = (endereco) => {
     document.getElementById('logradouro').value = '';
@@ -38,4 +38,6 @@ document.getElementById('cep')
     
 }
 
-module.exports = trat_cep;
+
+
+module.exports= app;
