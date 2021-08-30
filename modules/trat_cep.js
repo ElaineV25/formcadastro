@@ -36,4 +36,4 @@ document.getElementById('cep')
     
 }
 
-module.exports = app;
+module.exports = trat_cep;
